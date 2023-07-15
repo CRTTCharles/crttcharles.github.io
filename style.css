@@ -7,6 +7,18 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em
+}
+
 /* Header Styles */
 header {
     padding: 1em 0;
@@ -42,6 +54,7 @@ nav ul li a {
 
 nav a:hover {
     color: purple;
+    text-shadow: .1em .1em .5em rgba(128, 0, 128, 0.5);
 }
 
 /* Sous Menu Nav */
@@ -61,13 +74,59 @@ nav a:hover {
     display: block;
 }
 
+.sous li {
+    width: 100%;
+}
+
+.sous li:hover {
+    background-color: lightblue;
+}
+
 .deroulant:hover .sous {
     display: block;
 }
 
+.deroulant > a::after {
+    content: " ▼";
+    font-size: 0.8em;
+}
+
 /* Main Styles */
 main {
+
+}
+
+.main-intro {
+    background-image: url("images/main-intro-back.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.main-intro h1,
+.main-intro h2,
+.main-intro p {
+    display: flex;
+    justify-content: right;
+    color: plum;
+    text-align: center;
+    margin: 0;
+}
+
+.main-intro h1 {
+    padding-top: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.main-intro h2 {
     margin: 1em;
+    line-height: 2.5em;
+}
+
+.main-intro p {
+    margin: 1em;
+    padding-bottom: .5em;
+    font-size: 1.5em;
 }
 
 /* Footer Styles */
