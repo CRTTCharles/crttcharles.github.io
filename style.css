@@ -107,9 +107,10 @@ main {
 .main-intro p {
     display: flex;
     justify-content: right;
-    color: plum;
+    color: blueviolet;
     text-align: center;
     margin: 0;
+    text-shadow: 0em 0.1em 0.8em blue;
 }
 
 .main-intro h1 {
@@ -124,8 +125,9 @@ main {
 }
 
 .main-intro p {
-    margin: 1em;
-    padding-bottom: .5em;
+    margin-right: 3em;
+    margin-left: 3em;
+    padding-bottom: 1em;
     font-size: 1.5em;
 }
 
