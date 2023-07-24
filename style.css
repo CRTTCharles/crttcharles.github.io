@@ -10,14 +10,18 @@ body {
     padding: 0;
 }
 
-main {
-    border-left: .15em solid;
-    border-right: .15em solid;
+@media screen and (min-width: 1921px) {
+    main {
+        border-left: .15em solid;
+        border-right: .15em solid;
+    }
+
+    .marges {
+        margin: 0 10vh;
+    }
 }
 
-.marges {
-    margin: 0 10%;
-}
+
 
 h1 {
     font-size: 3em;
@@ -91,9 +95,10 @@ nav ul li a {
 
 .sous a {
     color: inherit;
-    padding: 1em 1em;
+    padding: 1em 0 1em 1em;
     text-decoration: none;
     display: block;
+    margin: 0;
 }
 
 .sous a:hover {
