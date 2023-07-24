@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     font-family: Verdana, sans-serif;
     background-color: #333;
-    color: plum;
+    color: orchid;
     margin: 0;
     padding: 0;
 }
@@ -20,8 +20,6 @@ body {
         margin: 0 10vh;
     }
 }
-
-
 
 h1 {
     font-size: 3em;
@@ -89,16 +87,16 @@ nav ul li a {
     position: absolute;
     background-color: inherit;
     min-width: none;
+    max-width: 10em;
     box-shadow: 0em .5em .5em 0em plum;
     z-index: 1;
 }
 
 .sous a {
     color: inherit;
-    padding: 1em 0 1em 1em;
+    padding: 1em;
     text-decoration: none;
     display: block;
-    margin: 0;
 }
 
 .sous a:hover {
@@ -157,6 +155,7 @@ nav ul li a {
 .main-pratiques {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2em;
 }
 
@@ -166,10 +165,18 @@ nav ul li a {
     line-height: 2em;
 }
 
+.main-pratiques a {
+    text-decoration: none;
+}
+
 .portrait {
     margin: auto;
-    border: purple solid .3em;
+    border: orchid solid .3em;
     line-height: 0;
+}
+
+.portrait img {
+    height: 20em;
 }
 
 .pratiques {
@@ -197,10 +204,12 @@ footer .contact-info ul {
 
 .telephone:hover {
     text-decoration: underline;
-    color: magenta;  
+    color: magenta;
+    text-shadow: .1em .1em .5em rgba(221, 160, 221, 0.8)
 }
 
 .mail:hover {
     text-decoration: underline;
-    color: magenta;  
+    color: magenta;
+    text-shadow: .1em .1em .5em rgba(221, 160, 221, 0.8)
 }
