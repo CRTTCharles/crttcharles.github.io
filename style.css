@@ -12,12 +12,12 @@ body {
 
 @media screen and (min-width: 1921px) {
     main {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
         border-left: .15em solid;
         border-right: .15em solid;
-    }
-
-    .marges {
-        margin: 0 10vh;
     }
 }
 
