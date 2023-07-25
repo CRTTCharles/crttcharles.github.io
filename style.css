@@ -76,6 +76,7 @@ nav ul li {
     display: inline-block;
     margin-right: 1em;
     background-color: white;
+    color: plum;
 }
 
 nav ul li a {
