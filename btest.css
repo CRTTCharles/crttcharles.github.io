@@ -1,0 +1,192 @@
+body  {
+    font-size: 2em;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+    border: .15em solid purple;
+    border-radius: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 2em;
+}
+
+header a {
+    color: magenta;
+    font-weight: bold;
+}
+
+
+/* Sous Menu Nav */
+.sous {
+    display: none;
+    position: absolute;
+    min-width: none;
+    max-width: 10em;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    background-color: #33333390;
+    border: .1em solid #33333390;
+    color: magenta;
+}
+
+.sous a {
+    color: inherit;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.sous a:hover {
+    color: magenta;
+    background-color: rgba(128, 128, 128, 0.80);
+}
+
+.sous li {
+    width: 100%;
+}
+
+.deroulant:hover .sous {
+    display: block;
+}
+
+.deroulant > a::after {
+    content: " ▼";
+    font-size: 0.8em;
+}
+
+/* Main */
+.row1, .row2 {
+    display:flex ;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.BT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .15em solid purple;
+    border-radius: 1em;
+    padding: .5em .1em;
+    margin: 1em .1em;
+}
+
+.BT h2 {
+    margin: 0 .1em;
+    color: purple;
+}
+
+section li {
+    margin: 0 .1em;
+    line-height: 1.5em;
+    list-style-type: none;
+}
+
+.puces {
+    padding: 0;
+    margin: 0;
+}
+
+.puces li:nth-child(even) button::before {
+    content: "♫ ";
+    font-size: .8em;
+}
+
+.puces li:nth-child(odd) button::before {
+    content: "♪ ";
+    font-size: .8em;
+}
+
+.colorButton {
+    padding: .15em .5em;
+    margin: .1em;
+    font-size: 1em;
+    background: purple;
+    color: orchid;
+    border: .1em solid transparent;
+    border-radius: .5em;
+    cursor: pointer;
+  }
+
+.colorButton:hover {
+    background: darkmagenta;
+    border: .1em solid purple;
+    border-radius: .5em;
+}
+
+.colorButton:active {
+    background-color: darkorchid;
+    border: .1em solid magenta;
+}
+
+.noButton {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* Tableau */
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: .15em solid purple;
+    margin-top: .5em;
+}
+
+th, td {
+    border-bottom: .1em solid purple;
+}
+
+.table-head th {
+    color: magenta;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 30%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 25%;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(218, 112, 214, 0.3);
+    color: darkmagenta;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 0, 255, 0.3);
+    color: rebeccapurple;
+}
